@@ -21,11 +21,14 @@
     ],
     "output": "_site",
     "template": [
-      "default"
+      "default",
+      "templates/minimal"
     ],
     "globalMetadata": {
       "_appName": "Club Tiempo Libre",
       "_appTitle": "Base de conocimiento",
+      "_appLogoPath": "assets/identidad-de-marca/ctl-verde-transparente.webp",
+      "_appFooter": "Club Tiempo Libre",
       "_enableSearch": true,
       "_lang": "es"
     }
