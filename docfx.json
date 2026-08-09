@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "toc.yml"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "assets/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default"
+    ],
+    "globalMetadata": {
+      "_appName": "Club Tiempo Libre",
+      "_appTitle": "Base de conocimiento",
+      "_enableSearch": true,
+      "_lang": "es"
+    }
+  }
+}
