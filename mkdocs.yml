@@ -1,0 +1,58 @@
+site_name: Club Tiempo Libre
+site_description: Base de conocimiento de Club Tiempo Libre
+site_url: https://clubtiempolibre.github.io/club-tiempo-libre-knowledge/
+repo_url: https://github.com/ClubTiempoLibre/club-tiempo-libre-knowledge
+repo_name: ClubTiempoLibre/club-tiempo-libre-knowledge
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  logo: assets/identidad-de-marca/ctl-verde-transparente.webp
+  favicon: assets/identidad-de-marca/ctl-verde-transparente.webp
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: Club Tiempo Libre
+
+nav:
+  - Inicio: index.md
+  - Organización:
+      - organizacion/index.md
+      - Misión y valores: organizacion/mision-y-valores.md
+      - Historia: organizacion/historia.md
+      - Entidad legal: organizacion/entidad-legal.md
+  - Campamentos:
+      - campamentos/index.md
+      - Grupos por edades: campamentos/grupos-por-edades.md
+      - Inscripciones: campamentos/inscripciones.md
+      - Unirse al equipo: campamentos/unirse-al-equipo.md
+      - Normativa del campamento: campamentos/normativa.md
+      - Horario del campamento de verano: campamentos/horario-del-campamento-de-verano.md
+  - Comunicación:
+      - comunicacion/index.md
+      - Sitio web: comunicacion/sitio-web.md
+      - Redes sociales: comunicacion/redes-sociales.md
+      - Identidad de marca: comunicacion/identidad-de-marca.md

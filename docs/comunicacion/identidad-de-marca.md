@@ -146,7 +146,7 @@ El material visual debe mostrar experiencias reales y reflejar la vida de Club T
 - Seleccionar fondos que permitan leer cualquier texto superpuesto.
 - Evitar fotografías genéricas de archivo cuando existan imágenes propias adecuadas.
 
-Solo se publica material cubierto por la autorización correspondiente. No se deben mostrar datos personales, documentación, información de salud, espacios privados ni ubicaciones sensibles en tiempo real. Los criterios completos se recogen en [Redes sociales](redes-sociales.md#protección-de-menores-y-privacidad).
+Solo se publica material cubierto por la autorización correspondiente. No se deben mostrar datos personales, documentación, información de salud, espacios privados ni ubicaciones sensibles en tiempo real. Los criterios completos se recogen en [Redes sociales](redes-sociales.md#proteccion-de-menores-y-privacidad).
 
 ## Iconos y emojis
 

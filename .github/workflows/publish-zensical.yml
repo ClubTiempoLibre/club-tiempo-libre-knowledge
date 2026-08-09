@@ -17,31 +17,32 @@ concurrency:
 
 jobs:
   build:
-    name: Compilar DocFX
+    name: Compilar Zensical
     runs-on: ubuntu-latest
 
     steps:
       - name: Obtener el repositorio
         uses: actions/checkout@v7
 
-      - name: Configurar .NET
-        uses: actions/setup-dotnet@v6
+      - name: Configurar Python
+        uses: actions/setup-python@v6
         with:
-          dotnet-version: 8.x
+          python-version: "3.12"
+          cache: pip
 
-      - name: Instalar DocFX
-        run: dotnet tool install --global docfx --version 2.78.5
+      - name: Instalar Zensical
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v6
 
       - name: Compilar la documentación
-        run: docfx docfx.json
+        run: zensical build --clean --strict
 
       - name: Subir el sitio generado
         uses: actions/upload-pages-artifact@v5
         with:
-          path: _site
+          path: site
 
   deploy:
     name: Publicar en GitHub Pages

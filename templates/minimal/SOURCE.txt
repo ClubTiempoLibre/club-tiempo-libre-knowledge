@@ -1,9 +1,0 @@
-DocFX Minimal Template
-https://github.com/sotanakamura/docfx-minimal
-Commit: d123cd27df3e323c9e087489f7ca2b0d65d37e36
-
-The layout, table-of-contents partial and footer partial are unmodified from
-the commit above. The navbar is adapted for Spanish labels and compact
-desktop navigation. The logo partial is based on DocFX 2.78.5's default
-template and is covered by LICENSE-DOCFX. styles/main.css is based on the
-upstream stylesheet and adapted for the Club Tiempo Libre visual identity.
