@@ -7,7 +7,7 @@ La documentación se genera con [Zensical](https://zensical.org/) y se publica e
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-docs.txt
 zensical serve
 ```
 
@@ -20,3 +20,7 @@ zensical build --clean --strict
 ```
 
 Los cambios enviados a `main` se publican mediante GitHub Actions.
+
+## Índice RAG
+
+Cada cambio enviado a `main` también recrea el índice semántico de la documentación en Qdrant. La arquitectura, la configuración de GitHub Actions y las pruebas locales se describen en [Indexación RAG](docs/admin/rag-indexing.md).

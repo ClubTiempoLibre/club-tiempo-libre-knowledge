@@ -29,9 +29,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-docs.txt
 
       - name: Instalar Zensical
-        run: python -m pip install --disable-pip-version-check -r requirements.txt
+        run: python -m pip install --disable-pip-version-check -r requirements-docs.txt
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v6

@@ -1,3 +1,6 @@
 _site/
 .venv/
 site/
+.env
+__pycache__/
+*.py[cod]

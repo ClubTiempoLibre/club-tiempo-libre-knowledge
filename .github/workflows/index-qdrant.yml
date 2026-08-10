@@ -1,0 +1,74 @@
+name: Indexar conocimiento en Qdrant
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qdrant-index-main
+  cancel-in-progress: false
+
+jobs:
+  index:
+    name: Generar índice RAG
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    env:
+      QDRANT_URL: ${{ vars.QDRANT_URL }}
+      EMBEDDING_MODEL: BAAI/bge-m3
+      EMBEDDING_BATCH_SIZE: "2"
+      TOKENIZERS_PARALLELISM: "false"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Obtener el repositorio
+        uses: actions/checkout@v7
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Restaurar caché del modelo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-huggingface-bge-m3-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-huggingface-bge-m3-
+
+      - name: Instalar dependencias
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Validar configuración
+        shell: bash
+        env:
+          QDRANT_API_KEY: ${{ secrets.QDRANT_API_KEY }}
+        run: |
+          if [[ -z "$QDRANT_URL" ]]; then
+            echo "::error::Configura QDRANT_URL como variable del repositorio"
+            exit 1
+          fi
+          if [[ -z "$QDRANT_API_KEY" ]]; then
+            echo "::error::Configura QDRANT_API_KEY como secreto del repositorio"
+            exit 1
+          fi
+
+      - name: Probar el indexador
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/index_qdrant.py --dry-run
+
+      - name: Recrear índice en Qdrant
+        env:
+          QDRANT_API_KEY: ${{ secrets.QDRANT_API_KEY }}
+        run: python scripts/index_qdrant.py

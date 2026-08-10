@@ -1,1 +1,4 @@
-zensical==0.0.53
+-r requirements-docs.txt
+
+qdrant-client>=1.15.1,<2.0.0
+sentence-transformers>=5.1.0,<6.0.0
