@@ -20,6 +20,7 @@ nav = [
   { "Campamentos" = [
     "campamentos/index.md",
     { "Grupos por edades" = "campamentos/grupos-por-edades.md" },
+    { "La Capa Negra" = "campamentos/la-capa-negra.md" },
     { "Inscripciones" = "campamentos/inscripciones.md" },
     { "Unirse al equipo" = "campamentos/unirse-al-equipo.md" },
     { "Normativa del campamento" = "campamentos/normativa.md" },

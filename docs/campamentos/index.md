@@ -5,6 +5,7 @@ Esta sección reúne los procesos necesarios para planificar, organizar y cerrar
 ## Contenidos
 
 - [Grupos por edades](grupos-por-edades.md)
+- [La Capa Negra](la-capa-negra.md)
 - [Inscripciones](inscripciones.md)
 - [Unirse al equipo](unirse-al-equipo.md)
 - [Normativa del campamento](normativa.md)

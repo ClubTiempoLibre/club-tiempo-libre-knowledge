@@ -10,6 +10,8 @@ La historia de la organización está estrechamente vinculada a los campamentos 
 
 También proceden de esta tradición los nombres históricos de los [grupos por edades](../campamentos/grupos-por-edades.md): Leopardos, Panteras, Tigres y Leones.
 
+Entre los personajes tradicionales del campamento se encuentra [La Capa Negra](../campamentos/la-capa-negra.md), vinculada al orden y la limpieza diaria de los grupos.
+
 ## Monitores y legado
 
 La figura del monitor ha ocupado un lugar central en el acompañamiento y cuidado de los participantes. La organización destaca la influencia positiva de estos jóvenes y las relaciones de confianza construidas durante los campamentos.

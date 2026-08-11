@@ -70,6 +70,8 @@ El personal prepara las mesas antes de cada comida, colocando un vaso, una servi
 
 El cuidado de las instalaciones es responsabilidad de todos. Por ello, cada grupo deberá dedicar un tiempo diario a ordenar y mantener en buenas condiciones los espacios que utiliza durante el campamento.
 
+Durante el campamento, [La Capa Negra](la-capa-negra.md) pone cada día una nota a los grupos por el orden y la limpieza.
+
 En todas las habitaciones, los campamentistas deberán hacer la cama, barrer y/o fregar cuando sea necesario, mantener las maletas y pertenencias personales ordenadas y procurar que el espacio permanezca limpio y recogido. Los monitores supervisarán estas tareas y ayudarán a fomentar hábitos de responsabilidad, autonomía y cuidado de los espacios comunes.
 
 Además del orden de las habitaciones, cada grupo tendrá asignada una tarea específica de servicio para contribuir al buen funcionamiento del campamento.
