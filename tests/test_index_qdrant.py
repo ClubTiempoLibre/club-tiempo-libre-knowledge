@@ -37,7 +37,6 @@ class MarkdownDiscoveryTests(unittest.TestCase):
                 root / ".github" / "notes.md",
                 root / "site" / "generated.md",
                 root / "docs" / ".hidden.md",
-                root / "docs" / "admin" / "rag-indexing.md",
             ]
             included.parent.mkdir(parents=True)
             included.write_text(

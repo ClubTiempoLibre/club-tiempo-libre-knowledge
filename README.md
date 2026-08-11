@@ -23,4 +23,4 @@ Los cambios enviados a `main` se publican mediante GitHub Actions.
 
 ## Índice RAG
 
-Cada cambio enviado a `main` también recrea el índice semántico de la documentación en Qdrant. La arquitectura, la configuración de GitHub Actions y las pruebas locales se describen en [Indexación RAG](docs/admin/rag-indexing.md).
+Cada cambio enviado a `main` también recrea el índice semántico de la documentación en Qdrant.

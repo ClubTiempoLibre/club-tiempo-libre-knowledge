@@ -31,9 +31,6 @@ nav = [
     { "Redes sociales" = "comunicacion/redes-sociales.md" },
     { "Identidad de marca" = "comunicacion/identidad-de-marca.md" },
   ] },
-  { "Administración" = [
-    { "Indexación RAG" = "admin/rag-indexing.md" },
-  ] },
 ]
 
 [project.theme]

@@ -39,7 +39,6 @@ EXCLUDED_DIRECTORY_NAMES = {
 }
 EXCLUDED_FILE_PATHS = {
     PurePosixPath("README.md"),
-    PurePosixPath("docs/admin/rag-indexing.md"),
 }
 MARKDOWN_SUFFIXES = {".md", ".mdx"}
 
